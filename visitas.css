@@ -1,0 +1,58 @@
+
+body
+{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#007bb2, #0d1423);
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+.fondo
+{
+    position: fixed;
+    top: 5%;
+    height: 90%;
+    padding: 20px;
+    margin: 20px;
+    grid-column: 1;
+}
+
+.container 
+{
+max-width: 1200px;
+margin: 0 auto;
+grid-column: 2;
+}
+
+.videos
+{
+padding: 15px 0 15px 0;
+}
+
+.swiper 
+{
+width: 100%;
+}
+
+.swiper-slide 
+{
+background-position: center;
+background-size: cover;
+width: 250px;
+}
+
+.swiper-slide iframe 
+{
+display: block;
+width: 100%;
+}
+
+@media (max-width:991px)
+{
+
+.search{ padding: 30px 30px 0 30px;}
+.videos{ padding: 30px;}
+}
+

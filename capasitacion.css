@@ -1,0 +1,154 @@
+body
+{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: linear-gradient(#007bb2, #0d1423);
+}
+
+.container
+{
+perspective: 250px;
+width: 300px;
+height: 150px;
+position: relative;
+margin-top: 300px;
+}
+    
+.tarjeta 
+{
+width: 100px;
+height: 150px;
+background-color: orangered;
+font-size: 40px;
+position: absolute;
+top: 35px;
+left: 125px;
+border-radius: 8px;
+text-align: center;
+cursor: pointer;
+animation: carrusel 12s linear infinite;
+border-radius: 10px;
+display: flex;
+justify-content:flex-end ;    
+}
+
+@keyframes carrusel
+{
+from { 
+      transform: rotateY(360deg) translateZ(230px);
+      z-index: 10;
+      opacity: .10;
+     }
+50% { z-index: -10;}
+to {transform: rotateX(0deg) translateZ(230px); z-index: 10; }
+}
+    
+.tarjeta h3 
+{
+color: rgba(255, 255, 255, 0.568); 
+font-size: 10px;
+font-family:"Lemon", serif ;
+background-color: rgba(255, 0, 0, 0.568);
+border-radius: 10px;
+}
+    
+#otros-sistemas-3
+{
+background-image: url(  );
+background-size: cover;
+animation-delay: -1s;
+}
+
+#otros-sistemas-2
+{
+background-image: url(  );
+background-size: cover;
+animation-delay: -2s;
+}
+
+#otros-sistemas-1
+{
+background-image: url(  );
+background-size: cover;
+animation-delay: -3s;
+}
+
+#sistemas-de-extraccion
+{
+background-image: url(  );
+background-size: cover;
+animation-delay: -4s;
+}
+
+#sistemas-de-progresion
+{
+background-image: url(  );
+background-size: cover;
+animation-delay: -5s;
+}
+
+#sistemas-de-descenso
+{
+background-image: url(  );
+background-size: cover;
+animation-delay: -6s;
+}
+
+#sistemas-verticales
+{
+background-image: url(  );
+background-size: cover;
+animation-delay: -7s;
+}
+
+#nudos-en-cañonismo 
+{
+background-image: url(   );
+background-size: cover;
+animation-delay: -8s;  
+}
+
+#comunicacion-en-cañonismo 
+{
+background-image: url(  );
+background-size: cover;
+animation-delay: -9s;
+}
+
+#atencion-en-cañonismo 
+{
+background-image: url(  );
+background-size: cover;
+animation-delay: -10s;
+}
+
+#etica-en-cañonismo
+{
+background-image: url(  );
+background-size: cover;
+animation-delay: -11s;
+}
+
+#seguridad-en-cañonismo
+{
+background-image: url(  );
+background-size: cover;
+animation-delay: -12s;
+}
+
+
+#otros-sistemas-3:hover, #otros-sistemas-2:hover, #otros-sistemas-1:hover, #sistemas-de-extraccion:hover,
+#sistemas-de-progresion:hover, #sistemas-de-descenso:hover, #sistemas-verticales:hover, #nudos-en-cañonismo:hover, 
+#comunicacion-en-cañonismo:hover, #atencion-en-cañonismo:hover, #etica-en-cañonismo:hover, #seguridad-en-cañonismo:hover 
+{
+box-shadow: 0px 0px 10px yellowgreen;
+}
+
+@media (max-width:740px)
+{
+body{min-height: 0vh;}
+.carrusel{ max-width: 360px;} 
+}
+

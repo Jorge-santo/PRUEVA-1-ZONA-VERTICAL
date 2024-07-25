@@ -1,0 +1,13 @@
+body
+{
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: linear-gradient(#007bb2, #0d1423);
+}
+
+
+#contentWrap
+{
+display: none; 
+}
